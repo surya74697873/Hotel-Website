@@ -1,0 +1,424 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7rem;
+}
+#burger{
+  position: relative;
+  bottom: 5px;
+  width: 35px;
+  flex-direction: column;
+  Justify-content:center ;
+  align-self: center;
+  display:none;
+}
+#burger i{
+ margin-top: 5px;
+ border: 3px solid #fff;
+ border-radius: 2px;
+}
+
+h1{
+  font-size: 2.5rem;
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav{
+  background: #333;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 10px;
+  overflow-y: hidden;
+}
+
+ul{
+  
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  transition-property: width,height;
+  transition-duration: 1s;
+}
+
+ul li{
+  padding: 10px;
+  font-weight: bold;
+  font-size:1.3rem;
+}
+
+ul li :hover{
+  background: deepskyblue;
+}
+
+
+#showcase{
+  background: url(../images/showcase2.jpeg) no-repeat center center/cover;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+#showcase .content{
+  padding :25px;
+}
+h2,
+.text,
+.anchor{
+  display: inline-block;
+  line-height: 1.3rem;
+  margin-top: 20px;
+}
+.text{
+  font-size: 20px;
+  font-stretch: 1rem;
+}
+.primary-text{
+  color: lightskyblue;
+}
+
+.anchor{
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight : bold;
+  border-radius: 5px;
+}
+
+#showcase .content .anchor:hover ,
+section .info-content .anchor{
+  color: #333;
+  background: #fff;
+}
+
+section .anchor:hover{
+  background: lightskyblue;
+  color: #fff;
+}
+.content .anchor{
+  background: #333;
+  color: #fff;
+}
+
+
+.info-img {
+  background: url(../images/hotel1.jpg) no-repeat center center/cover;
+  height:500px;
+  width: 50%;
+  float: left;
+}
+
+.info-content{
+  float: right;
+  width: 50%;
+  height: 500px;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  background: #333;
+}
+
+#features {
+  display: inline-flex;
+}
+
+.box{
+  text-align: center;
+  width: 33.3%;
+  padding: 15px;
+}
+
+.box .fa-solid{
+  font-size: 2.5rem;
+}
+
+.box :nth-child(3){
+  margin-top: 15px;
+}
+
+#features :nth-of-type(2){
+  background: lightskyblue;
+}
+
+footer{
+  padding: 20px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+/*About Page 
+#about .about-info {
+  display: flex;
+  border: 2px solid black;
+}
+
+#about h3{
+  font-size: 2.5rem;
+}
+#about .about-info .right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .right img{
+  border-radius: 50%;
+  width: 65%;
+}
+
+#about .about-info .left{
+  width: 250%;
+  padding:30px;
+}
+
+#about .about-info .left p, 
+#about .about-info .left h3{
+  margin-top: 10px;
+}
+
+#about .about-info .right h3{
+  text-align: start;
+  padding-left: 0;
+  margin-bottom:20px;
+  color: #333;
+}
+
+*/
+
+#about h3{
+  font-size: 2.5rem;
+  margin-top: 33px;
+  margin-left: 3px;
+}
+
+
+#about .about-info .right-left {
+  display: flex;
+  margin: 40px;
+  padding: 10px;
+  border: 4px solid lightskyblue;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+#about .about-info .right-left .left img{
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  position: relative;
+  top: 35px;
+}
+
+#about .about-info .right-left .left,
+#about .about-info .right-left .right{
+  text-align: center;
+}
+
+#about .about-info .right-left .right p{
+  padding: 10px;
+  text-align: start;
+  position: relative;
+  top: 45px;
+}
+
+#testimonials {
+  background: url("../images/test-bg1.jpg") no-repeat center center/cover;
+  height: 600px;
+  padding: 20px;
+}
+
+.testi-container img{
+  width: 100px;
+  border-radius: 50%;
+}
+.testi-container h2{
+ color: #fff;
+ padding: 10px 10px;
+}
+.testimonial{
+  display: flex;
+  text-align: start;
+  margin-top: 35px;
+  background: lightskyblue;
+  padding: 25px;
+  border-radius: 50px;
+  opacity: 0.9;
+  box-sizing:border-box ;
+}
+
+.testimonial p{
+  color: #fff;
+  padding-left: 20px;
+  font-size: 1rem;
+}
+
+/*form*/
+#contact{
+  padding: 20px;
+  font-size: 1rem;
+}
+
+#contact p{
+  margin-top: 10px;
+}
+.form-data input{
+  display: block;
+  width: 80%;
+  height: 30px;
+  text-align: start;
+  padding: 5px;
+  font-size: 1.2rem;
+  font-stretch: 1.5rem;
+}
+
+.form-data textarea{
+  display: block;
+  width: 80%;
+}
+
+.form-data #message{
+  height: 300px;
+  padding: 10px;
+}
+
+#contact button{
+  margin-top: 30px;
+  padding: 10px;
+  padding-inline: 20px;
+  border: none;
+  border-radius: 13px;
+  background: #555;
+  color: #fff;
+}
+
+
+/* MEDIA QUERY.*/
+
+
+@media only screen and (max-width: 600px) {
+  
+  /* Home.*/
+  
+  #burger{
+    display: flex;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: #333;
+    width:0vw;
+    position: absolute;
+    left: 0px;
+    bottom: 66%;
+    transition-property: width, height, background, position;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+  }
+  ul li{
+    margin: 10px;
+  }
+  ul li a {
+    visibility: hidden;
+    opacity: 0;
+    transition-property: text, background, height, width, opacity ;
+    transition-duration: 2.5s;
+    transition-timing-function: ease-in;
+  }
+  
+  .visibility {
+    opacity: 1;
+    visibility: visible;
+    transition-property: text, background, height, width, opacity ;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in;
+  }
+  .visible{
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: #333;
+    width: 100vw;
+    position: absolute;
+    left: 0px;
+    bottom: 66%;
+    z-index: 1;
+    transition-property: width, height, background;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+
+  }
+  
+  .text{
+    font-size: 17px;
+  }
+  .info-content,
+  .box,
+  .info-img{
+    width: 100%;
+    float: none;
+  }
+  #features,
+  #hotel{
+    display: block;
+  }
+  .box{
+    margin: 0;
+    padding: 20px;
+    
+  }
+  .box .fa-solid{
+    font-size: 100px;
+    color: #333;
+  }
+  
+  
+  
+  /* About */
+  
+  #about .about-info .right-left{
+    display: block;
+    height: 800px;
+  }
+  
+  #about .about-info .right-left .left img{
+    width: 250px;
+    height: 250px;
+  }
+  #testimonials{
+    height: 800px;
+  }
+  
+  .testimonial{
+    display: block;
+  }
+  .testi-container img{
+    height: 100px;
+    position: relative;
+    left: 17px;
+  }
+  
+  .testi-container p{
+    font-size: 14px;
+  }
+  
+  
+}
+

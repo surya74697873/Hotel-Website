@@ -327,27 +327,25 @@ footer{
     width:0vw;
     position: absolute;
     left: 0px;
-    bottom: 66%;
+    bottom: 66.5%;
     transition-property: width, height, background, position;
-    transition-duration: 2s;
+    transition-duration: .9s;
     transition-timing-function: ease-in;
   }
   ul li{
     margin: 10px;
   }
   ul li a {
-    visibility: hidden;
     opacity: 0;
     transition-property: text, background, height, width, opacity ;
-    transition-duration: 2.5s;
+    transition-duration: .8s;
     transition-timing-function: ease-in;
   }
   
   .visibility {
     opacity: 1;
-    visibility: visible;
     transition-property: text, background, height, width, opacity ;
-    transition-duration: 1.5s;
+    transition-duration: .9s;
     transition-timing-function: ease-in;
   }
   .visible{
@@ -358,10 +356,10 @@ footer{
     width: 100vw;
     position: absolute;
     left: 0px;
-    bottom: 66%;
+    bottom: 66.5%;
     z-index: 1;
     transition-property: width, height, background;
-    transition-duration: 2s;
+    transition-duration: .9s;
     transition-timing-function: ease-in;
 
   }
@@ -409,6 +407,7 @@ footer{
   .testimonial{
     display: block;
   }
+  
   .testi-container img{
     height: 100px;
     position: relative;

@@ -163,7 +163,7 @@ footer{
   color: #fff;
 }
 
-/*About Page 
+/*About Page 1st correction
 #about .about-info {
   display: flex;
   border: 2px solid black;
@@ -201,7 +201,8 @@ footer{
 }
 
 */
-
+ 
+ /*  about info section is not resposible
 #about h3{
   font-size: 2.5rem;
   margin-top: 33px;
@@ -237,6 +238,46 @@ footer{
   position: relative;
   top: 45px;
 }
+*/
+#about{
+  padding: 2rem;
+  box-sizing: border-box;
+}
+#about h3{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#about .right-left{
+  display: flex;
+  border: 4px solid lightskyblue;
+}
+
+#about .right-left .left{
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  max-width:40%;
+}
+
+#about .right-left .left img{
+  width: 70%;
+  height: 70%;
+  border-radius: 35%;
+}
+
+#about .right-left .right{
+  display: flex;
+  justify-content: center;
+  vertical-align: center ;
+  flex-direction: column;
+  width: 70%;
+}
+#about .right-left .right p{
+  font-size: 1.5em;
+  font-stretch: 1rem;
+  margin: 1rem;
+}
 
 #testimonials {
   background: url("../images/test-bg1.jpg") no-repeat center center/cover;
@@ -266,7 +307,7 @@ footer{
 .testimonial p{
   color: #fff;
   padding-left: 20px;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 /*form*/
@@ -329,7 +370,7 @@ footer{
     left: 0px;
     bottom: 66.5%;
     transition-property: width, height, background, position;
-    transition-duration: .9s;
+    transition-duration: .7s;
     transition-timing-function: ease-in;
   }
   ul li{
@@ -338,14 +379,14 @@ footer{
   ul li a {
     opacity: 0;
     transition-property: text, background, height, width, opacity ;
-    transition-duration: .8s;
+    transition-duration: .5s;
     transition-timing-function: ease-in;
   }
   
   .visibility {
     opacity: 1;
     transition-property: text, background, height, width, opacity ;
-    transition-duration: .9s;
+    transition-duration: .5s;
     transition-timing-function: ease-in;
   }
   .visible{
@@ -359,7 +400,7 @@ footer{
     bottom: 66.5%;
     z-index: 1;
     transition-property: width, height, background;
-    transition-duration: .9s;
+    transition-duration: .7s;
     transition-timing-function: ease-in;
 
   }
@@ -388,8 +429,7 @@ footer{
   }
   
   
-  
-  /* About */
+  /* About   old version  without resposible
   
   #about .about-info .right-left{
     display: block;
@@ -400,6 +440,33 @@ footer{
     width: 250px;
     height: 250px;
   }
+  */
+  #about .right-left{
+    display: block;
+  }
+  
+#about .right-left .left{
+    max-width:100%;
+    height: 50vh;
+    padding: 10px;
+  }
+  
+  #about .right-left .left img{
+    width: 80%;
+    height: 75%;
+  }
+  
+  #about .right-left .right{
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+  }
+  
+  #about .right-left .right p{
+    font-size: 1.1rem;
+  }
+  
   #testimonials{
     height: 800px;
   }
@@ -415,7 +482,7 @@ footer{
   }
   
   .testi-container p{
-    font-size: 14px;
+    font-size: 15px;
   }
   
   
